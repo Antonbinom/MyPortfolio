@@ -9,6 +9,10 @@ h1, h2, h3, h4, h5, p {
   padding: 0;
 }
 
+p {
+  font-size: 14px;
+}
+
 html, body {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
@@ -373,6 +377,15 @@ template {
   display: none;
 }
 
+@media (max-width: 1200px) {
+  .portfolio__item-title {
+    font-size: 18px;
+  }
+  .portfolio__item p {
+    font-size: 14px;
+  }
+}
+
 .portfolio__item figure {
   border-radius: 5px;
   overflow: hidden;
@@ -387,6 +400,16 @@ template {
 .portfolio__item-wrapper {
   display: flex;
   flex-direction: column;
+}
+
+.portfolio__item-title {
+  margin-bottom: 10px;
+}
+
+.portfolio__item-subtitle {
+  max-height: 100px;
+  margin-bottom: 10px;
+  overflow: auto;
 }
 
 .portfolio__item-description {
